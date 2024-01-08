@@ -23,7 +23,7 @@ module.exports = async function (deployer) {
   deployer.link(StringUtils, ClientRaindrop)
   deployer.link(StringUtils, OldClientRaindrop)
 
-  // const identityRegistry = await deployer.deploy(IdentityRegistry)
+  const identityRegistry = await deployer.deploy(IdentityRegistry)
   // const hydroToken = await deployer.deploy(HydroToken)
   // const snowflake = await deployer.deploy(Snowflake, identityRegistry.address, hydroToken.address)
   // const oldClientRaindrop = await deployer.deploy(OldClientRaindrop)
